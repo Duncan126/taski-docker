@@ -1,7 +1,5 @@
-from pathlib import Path
-
-
 import os
+from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -125,7 +123,7 @@ CORS_ORIGIN_WHITELIST = [
 
 ALLOWED_HOSTS = os.getenv(
     'ALLOWED_HOSTS', 'localhost,127.0.0.1'
-).split(',') 
+).split(',')
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
